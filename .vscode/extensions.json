@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dracula-theme.theme-dracula",
+    "miguelsolorio.fluent-icons",
+    "pkief.material-icon-theme",
+    "ms-ceintl.vscode-language-pack-pt-br",
+    "esbenp.prettier-vscode",
+    "styled-components.vscode-styled-components"
+  ]
+}
