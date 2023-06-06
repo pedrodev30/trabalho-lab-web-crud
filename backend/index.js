@@ -9,4 +9,4 @@ app.use(cors())
 
 app.use("/", getUsers)
 
-app.listen(3306)
+app.listen(8800)
