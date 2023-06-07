@@ -13,13 +13,15 @@ const Container = style.div`
   gap: 10px;
 `
 
-const title = style.h2``
+const Title = style.h2`
+  text-transform: uppercase;
+`
 
 function App() {
   return (
     <>
       <Container>
-        <Title>USUÀRIOS</Title>
+        <Title>Cadastro de usuários</Title>
       </Container>
       <ToastContainer autoClose={300} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
