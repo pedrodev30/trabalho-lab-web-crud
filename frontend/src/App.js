@@ -13,11 +13,13 @@ const Container = style.div`
   gap: 10px;
 `
 
+const title = style.h2``
+
 function App() {
   return (
     <>
       <Container>
-
+        <Title>USUÀRIOS</Title>
       </Container>
       <ToastContainer autoClose={300} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
