@@ -2,8 +2,10 @@ import GlobalStyle from "../src/styles/global.js"
 import style from "styled-components"
 import Form from "./components/Form.js"
 import Grid from "./components/Grid.js"
+import { useState } from "react"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import axios from "axios"
 
 const Container = style.div`
   width: 100%;
@@ -20,6 +22,18 @@ const Title = style.h2`
 `
 
 function App() {
+  const [users, setUsers] = useState([])
+  const [onEdit, setOnEdit] = useState(null)
+
+  const getUsers = async() => {
+    try {
+      const res = await axios.get("https://localhost:8800")
+      setUsers(res.data.soft((a, b) => (a.nome > b.nome ? 1 : -1)))
+    } catch(error) {
+      toast.error(error)
+    }
+  }
+
   return (
     <>
       <Container>
