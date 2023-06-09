@@ -41,7 +41,7 @@ const Button = styled.button`
   text-transform: uppercase;
 `
 
-const Form = ({ onEdit }) => {
+const Form = ({ getUsers, onEdit, setOnEdit }) => {
   const ref = useRef()
 
   useEffect(() => {
