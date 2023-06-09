@@ -74,7 +74,7 @@ const Form = ({ onEdit }) => {
         .put("http://localhost:8800/" + onEdit.id, {
           nome: user.nome.value,
           email: user.email.value,
-          fone: user.telefone.value,
+          telefone: user.telefone.value,
           data_nascimento: user.data_nascimento.value,
         })
         .then(({ data }) => toast.success(data))
@@ -84,7 +84,7 @@ const Form = ({ onEdit }) => {
         .post("http://localhost:8800", {
           nome: user.nome.value,
           email: user.email.value,
-          fone: user.telefone.value,
+          telefone: user.telefone.value,
           data_nascimento: user.data_nascimento.value,
         })
         .then(({ data }) => toast.success(data))
