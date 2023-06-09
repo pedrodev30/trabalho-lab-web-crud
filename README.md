@@ -18,7 +18,10 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 📚 Funcionalidades
 
-[x] Cadastro de novos usuários através de um formulário.
-[x] Visualização dos usuários cadastrados em uma tabela.
-[x] Atualização dos dados de um usuário existente.
-[x] Exclusão de usuários da tabela.
+[ x ] Cadastro de novos usuários através de um formulário.
+
+[ x ] Visualização dos usuários cadastrados em uma tabela.
+
+[ x ] Atualização dos dados de um usuário existente.
+
+[ x ] Exclusão de usuários da tabela.
