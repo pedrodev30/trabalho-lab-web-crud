@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { FaTrash, FaEdit} from "react-icons/fa"
 
-export const Table = styled.table`
+const Table = styled.table`
   width: 100%;
   background-color: #fff;
   padding: 20px;
@@ -60,7 +61,7 @@ const Grid = ({ users }) => {
               <FaEdit />
             </Td>
             <Td alignCenter width="5%">
-              <Fatrash />
+              <FaTrash />
             </Td>
           </Tr>
         ))}
