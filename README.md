@@ -113,3 +113,7 @@ $ npm start
     </td>
   </tr>
 </table>
+
+## 🎯 Status do projeto
+
+O projeto está finalizado.
