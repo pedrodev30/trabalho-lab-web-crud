@@ -1,6 +1,8 @@
 import React from "react"
+import axios from "axios"
 import styled from "styled-components"
 import { FaTrash, FaEdit} from "react-icons/fa"
+import { toast } from "react-toastify"
 
 const Table = styled.table`
   width: 100%;
@@ -25,17 +27,17 @@ export const Th = styled.th`
   padding-bottom: 5px;
 
   @media (max-width: 500px) {
-    ${(props) => props.onlyweb && "display: none;"}
+    ${(props) => props.onlyWeb && "display: none"}
   }
 `
 
 export const Td = styled.td`
   padding-top: 20px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
-  width: ${(props) => (props.width ? props.width : "display: none;")};
+  width: ${(props) => (props.width ? props.width : "auto")};
 
   @media (max-width: 500px) {
-    ${(props) => props.onlyweb && "display: none;"}
+    ${(props) => props.onlyWeb && "display: none"}
   }
 `
 
@@ -46,7 +48,7 @@ const Grid = ({ users }) => {
         <Tr>
           <Th>Nome</Th>
           <Th>E-mail</Th>
-          <Th onlyweb>Telefone</Th>
+          <Th onlyWeb>Telefone</Th>
           <Th></Th>
           <Th></Th>
         </Tr>
@@ -56,7 +58,7 @@ const Grid = ({ users }) => {
           <Tr key={index}>
             <Td width="30%">{item.nome}</Td>
             <Td width="30%">{item.email}</Td>
-            <Td width="20%" onlyweb>{item.telefone}</Td>
+            <Td width="20%" onlyWeb>{item.telefone}</Td>
             <Td alignCenter width="5%">
               <FaEdit />
             </Td>
