@@ -39,3 +39,62 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Banco de Dados:
   - MySQL
+
+## 🚀 Como Executar o Projeto
+
+```bash
+# clone o repositório
+$ git clone https://github.com/pedrodev30/trabalho-lab-web-crud.git
+```
+
+### Configuração do Banco de Dados
+
+- Crie um banco de dados MySQL com o nome: ```<Escolha o nome que preferir>```
+- Execute o script SQL abaixo para criar a tabela "usuarios" no banco de dados:
+
+```sql
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  telefone VARCHAR(45),
+  PRIMARY KEY(id)
+);
+```
+
+- Execute este comando:
+
+```sql
+ALTER USER 'Aqui coloque entre as aspás simples o nome do usuario do banco(geralmente é root)'@'localhost' IDENTIFIENED WITH mysql_native_passsword BY 'Aqui coloque entre as aspás simples a senha do seu banco'; 
+```
+
+### Configuração do Back-end
+
+```bash
+# Entre na pasta backend
+$ cd backend
+
+# Instale as dependências
+$ npm install
+
+# Execute o servidor
+$ npm start
+```
+
+- O servidor back-end estará sendo executado em http://localhost:8800.
+- Obs: entre no arquivo "db.js" e altere a senha(use a senha do seu banco de dados assim que instalou o MySQL), o nome do banco quando você criou e se o seu usuário não for o root coloque o nome do usuário do banco.
+
+## Configuração do Front-end
+
+```bash
+# Entre na pasta frontend
+$ cd frontend
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+```
+
+- O aplicação front-end estará sendo executado em http://localhost:3000.
