@@ -23,6 +23,7 @@ const Input = styled.input`
   border: 1px solid #bbb;
   border-radius: 5px;
   height: 40px;
+  outline: none;
 `
 
 const Label = styled.label``
@@ -46,10 +47,16 @@ const Form = ({ onEdit }) => {
       <InputArea>
         <Label>Nome</Label>
         <Input name="nome"></Input>
+      </InputArea>
+      <InputArea>
         <Label>E-mail</Label>
         <Input name="email" type="email"></Input>
+      </InputArea>
+      <InputArea>
         <Label>Telefone</Label>
         <Input name="telefone"></Input>
+      </InputArea>
+      <InputArea>
         <Label>Data de Nascimento</Label>
         <Input name="data_nascimento" type="date"></Input>
       </InputArea>
