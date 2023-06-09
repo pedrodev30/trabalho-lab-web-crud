@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Table = styled.table`
+export const Table = styled.table`
   width: 100%;
   background-color: #fff;
   padding: 20px;
@@ -12,32 +12,59 @@ const Table = styled.table`
   word-wrap: break-word;
 `
 
-const Thead = styled.th``
+export const Thead = styled.thead``
 
-const Tr = styled.tr``
+export const Tbody = styled.tbody``
 
-const Td = styled.td`
+export const Tr = styled.tr``
+
+export const Th = styled.th`
   text-align: center;
   border-bottom: inset;
   padding-bottom: 5px;
 
   @media (max-width: 500px) {
-    ${(props) => props.onlyweb && "display: none"}
+    ${(props) => props.onlyweb && "display: none;"}
   }
 `
 
-const Grid = () => {
+export const Td = styled.td`
+  padding-top: 20px;
+  text-align: ${(props) => (props.alignCenter ? "center" : "start")};
+  width: ${(props) => (props.width ? props.width : "display: none;")};
+
+  @media (max-width: 500px) {
+    ${(props) => props.onlyweb && "display: none;"}
+  }
+`
+
+const Grid = ({ users }) => {
   return(
     <Table>
       <Thead>
         <Tr>
-          <Td>Nome</Td>
-          <Td>E-mail</Td>
-          <Td onlyweb>Telefone</Td>
-          <Td></Td>
-          <Td></Td>
+          <Th>Nome</Th>
+          <Th>E-mail</Th>
+          <Th onlyweb>Telefone</Th>
+          <Th></Th>
+          <Th></Th>
         </Tr>
       </Thead>
+      <Tbody>
+        {users.map((item, index) => (
+          <Tr key={index}>
+            <Td width="30%">{item.nome}</Td>
+            <Td width="30%">{item.email}</Td>
+            <Td width="20%" onlyweb>{item.telefone}</Td>
+            <Td alignCenter width="5%">
+              <FaEdit />
+            </Td>
+            <Td alignCenter width="5%">
+              <Fatrash />
+            </Td>
+          </Tr>
+        ))}
+      </Tbody>
     </Table>
   )
 }
