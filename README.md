@@ -22,3 +22,20 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - [x] Visualização dos usuários cadastrados em uma tabela.
 - [x] Atualização dos dados de um usuário existente.
 - [x] Exclusão de usuários da tabela.
+
+## 🔧 Tecnologias utilizadas
+
+- Front-end:
+  - ReactJS
+  - React Icons
+  - React Toastify
+  - Styled-Components
+
+- Back-end:
+  - Node.js
+  - Express
+  - Nodemon
+  - Cors
+
+- Banco de Dados:
+  - MySQL
