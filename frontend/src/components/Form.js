@@ -55,8 +55,25 @@ const Form = ({ onEdit }) => {
     }
   }, [onEdit])
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const user = ref.current
+
+    if (
+      !user.nome.value ||
+      !user.email.value ||
+      !user.telefone.value ||
+      !user.data_nascimento.value
+    ) {
+      return toast.warn("Preencha todos os campos!")
+    }
+
+    
+  }
+
   return (
-    <FormContainer ref={ref}>
+    <FormContainer ref={ref} onSubmit={handleSubmit}>
       <InputArea>
         <Label>Nome</Label>
         <Input name="nome"></Input>
