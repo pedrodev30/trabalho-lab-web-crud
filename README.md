@@ -98,3 +98,18 @@ $ npm start
 ```
 
 - O aplicação front-end estará sendo executado em http://localhost:3000.
+
+## 🤝 Criador
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/pedrodev30.png" width="100px;" alt="Foto do Pedro Henrique"/><br>
+        <sub>
+          <b>Pedro Henrique</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
