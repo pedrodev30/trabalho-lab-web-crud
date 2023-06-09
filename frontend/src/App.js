@@ -42,13 +42,13 @@ function App() {
     <>
       <Container>
         <Title>Cadastro de usuários</Title>
-        <Form />
-        <Grid users={users} setUsers={setUsers} />
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit} />
       </Container>
       <ToastContainer autoClose={300} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
     </>
-  );
+  )
 }
 
 export default App;

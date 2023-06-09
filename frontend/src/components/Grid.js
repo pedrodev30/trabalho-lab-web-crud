@@ -41,7 +41,10 @@ export const Td = styled.td`
   }
 `
 
-const Grid = ({ users }) => {
+const Grid = ({ users, setUsers, setOnEdit }) => {
+  const handleEdit = (item) => {
+    setOnEdit(item)
+  }
 
   const handleDelete = async (id) => {
     await axios
@@ -57,7 +60,7 @@ const Grid = ({ users }) => {
     setOnEdit(null)
   }
 
-  return(
+  return (
     <Table>
       <Thead>
         <Tr>
@@ -73,12 +76,14 @@ const Grid = ({ users }) => {
           <Tr key={index}>
             <Td width="30%">{item.nome}</Td>
             <Td width="30%">{item.email}</Td>
-            <Td width="20%" onlyWeb>{item.telefone}</Td>
-            <Td alignCenter width="5%">
-              <FaEdit />
+            <Td width="20%" onlyWeb>
+              {item.telefone}
             </Td>
             <Td alignCenter width="5%">
-              <FaTrash onClick={() => handleDelete(item.id)}/>
+              <FaEdit onClick={() => handleEdit(item)} />
+            </Td>
+            <Td alignCenter width="5%">
+              <FaTrash onClick={() => handleDelete(item.id)} />
             </Td>
           </Tr>
         ))}

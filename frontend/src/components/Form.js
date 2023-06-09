@@ -1,5 +1,5 @@
 import axios from "axios"
-import React, { useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { toast } from "react-toastify"
 
@@ -43,6 +43,17 @@ const Button = styled.button`
 
 const Form = ({ onEdit }) => {
   const ref = useRef()
+
+  useEffect(() => {
+    if (onEdit) {
+      const user = ref.current
+
+      user.nome.value = onEdit.nome
+      user.email.value = onEdit.email
+      user.telefone.value = onEdit.telefone
+      user.data_nascimento.value = onEdit.data_nascimento
+    }
+  }, [onEdit])
 
   return (
     <FormContainer ref={ref}>
