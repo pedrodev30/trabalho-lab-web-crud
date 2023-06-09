@@ -15,3 +15,10 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você tem uma máquina ```<Windows / Linux / Mac>```
 - Node.js instalado. Você pode instalar o Node através [DESSE LINK](https://nodejs.org/en)
 - Banco de dados MySQL configurado e em execução. Se tiver alguma duvida de como instalar e configurar o MySQL recomendo [ESTE LINK](https://www.youtube.com/watch?v=DKMrVxtJyUk)
+
+## 📚 Funcionalidades
+
+[x] Cadastro de novos usuários através de um formulário.
+[x] Visualização dos usuários cadastrados em uma tabela.
+[x] Atualização dos dados de um usuário existente.
+[x] Exclusão de usuários da tabela.
