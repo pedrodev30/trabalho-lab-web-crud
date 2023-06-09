@@ -3,6 +3,7 @@ import style from "styled-components"
 import Form from "./components/Form.js"
 import Grid from "./components/Grid.js"
 import { useState } from "react"
+import { useEffect } from "react"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import axios from "axios"
@@ -34,12 +35,16 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    getUsers()
+  }, [setUsers])
+
   return (
     <>
       <Container>
         <Title>Cadastro de usuários</Title>
         <Form />
-        <Grid />
+        <Grid users={users} />
       </Container>
       <ToastContainer autoClose={300} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
