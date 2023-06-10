@@ -53,11 +53,12 @@ $ git clone https://github.com/pedrodev30/trabalho-lab-web-crud.git
 - Execute o script SQL abaixo para criar a tabela "usuarios" no banco de dados:
 
 ```sql
-CREATE TABLE users (
+CREATE TABLE usuarios (
   id INT NOT NULL AUTO_INCREMENT,
   nome VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
-  telefone VARCHAR(45),
+  telefone VARCHAR(45) NOT NULL,
+  data_nascimento VARCHAR(45) NOT NULL,
   PRIMARY KEY(id)
 );
 ```
