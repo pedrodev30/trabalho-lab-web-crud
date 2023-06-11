@@ -14,6 +14,7 @@ Este é o meu trabalho da disciplina de Laboratório Web onde resolvi desenvolve
 - [x] Visualização dos usuários cadastrados em uma tabela.
 - [x] Atualização dos dados de um usuário existente.
 - [x] Exclusão de usuários da tabela.
+- [x] Tema escuro.
 
 ## 🔧 Tecnologias utilizadas
 
