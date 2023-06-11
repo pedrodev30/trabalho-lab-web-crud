@@ -8,7 +8,7 @@ const FormContainer = styled.form`
   align-items: flex-end;
   gap: 10px;
   flex-wrap: wrap;
-  background-color: #fff;
+  background-color: var(--bg-form-table);
   padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 5px;
@@ -26,16 +26,20 @@ const Input = styled.input`
   border-radius: 5px;
   height: 40px;
   outline: none;
+  background-color: var(--bg-input);
+  color: var(--color-text-input);
 `
 
-const Label = styled.label``
+const Label = styled.label`
+  color: var(--color-text);
+`
 
 const Button = styled.button`
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
-  background-color: #2c73d2;
+  background-color: var(--bg-button);
   color: #fff;
   height: 42px;
   text-transform: uppercase;

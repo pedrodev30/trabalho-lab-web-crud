@@ -8,6 +8,7 @@ const Global = createGlobalStyle`
     --bg-form-table: #fff;
     --bg-button: #2c73d2;
     --bg-input: #fff;
+    --color-text-input: #000;
   }
 
   .dark-theme {
@@ -15,6 +16,7 @@ const Global = createGlobalStyle`
     --color-text: #fff;
     --bg-form-table: #111;
     --bg-input: #111;
+    --color-text-input: #fff;
   }
 
   * {
