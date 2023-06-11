@@ -8,7 +8,7 @@ const Table = styled.table`
   width: 100%;
   background-color: var(--bg-form-table);
   padding: 20px;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 5px var(--color-box-shadow);
   border-radius: 5px;
   max-width: 1120px;
   margin: 20px auto;

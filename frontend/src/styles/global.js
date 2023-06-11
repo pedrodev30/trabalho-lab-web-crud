@@ -9,14 +9,16 @@ const Global = createGlobalStyle`
     --bg-button: #2c73d2;
     --bg-input: #fff;
     --color-text-input: #000;
+    --color-box-shadow: #ccc;
   }
 
   .dark-theme {
-    --bg-body: #292C35;
+    --bg-body: #111;
     --color-text: #fff;
-    --bg-form-table: #111;
-    --bg-input: #111;
+    --bg-form-table: #292C35;
+    --bg-input: #292C35;
     --color-text-input: #fff;
+    --color-box-shadow: #111;
   }
 
   * {
@@ -30,7 +32,7 @@ const Global = createGlobalStyle`
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #f1f1f1;
+    background-color: var(--bg-body);
   }
 `
 

@@ -10,7 +10,7 @@ const FormContainer = styled.form`
   flex-wrap: wrap;
   background-color: var(--bg-form-table);
   padding: 20px;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 5px var(--color-box-shadow);
   border-radius: 5px;
 `
 

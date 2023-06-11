@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import axios from "axios"
+import ThemeSwitcher from "./components/DarkModeToggle.js"
 
 const Container = styled.div`
   width: 100%;
@@ -19,6 +20,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   text-transform: uppercase;
+  color: var(--color-text);
 `
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
     <>
       <Container>
         <Title>Cadastro de usuários</Title>
+        <ThemeSwitcher />
         <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
