@@ -15,6 +15,7 @@ Este é o meu trabalho da disciplina de Laboratório Web onde resolvi desenvolve
 - [x] Atualização dos dados de um usuário existente.
 - [x] Exclusão de usuários da tabela.
 - [x] Tema escuro.
+- [x] Validação de campos.
 
 ## 🔧 Tecnologias utilizadas
 
